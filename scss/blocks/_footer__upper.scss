@@ -1,0 +1,37 @@
+.footer{
+    padding: 65px 0;
+}
+
+.upper{
+    margin-bottom:48px;
+}
+
+.upper__title{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+    margin-bottom: 20px;
+}
+
+.upper__item{
+    margin-bottom: 16px;
+    transform: scale(1);
+}
+
+.upper__link{
+    font-family: $font-open;
+    font-weight: $Normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-green;
+    transition: 0.2s ease;
+    transform: scale(1);
+
+    &:hover{
+    font-weight: 600;
+    color: $color-green-light;
+    transform: scale(1.02);
+    }
+}

@@ -1,0 +1,161 @@
+.menu{
+    padding: 54px 0 66px 0;
+}
+
+.menu__title{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+    margin-bottom: 16px;
+}
+
+.menu__list{
+    margin-bottom: 48px;
+}
+
+.menu__item{
+    margin-bottom: 12px;
+}
+
+.menu__link{
+    font-family: $font-open;
+    font-weight: $Normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-green;
+    text-decoration:underline;
+    transition: 0.4s ease;
+
+    &:hover{
+        color: $color-green-light;
+    }
+}
+
+.menu__btn{
+    font-family: $font-poppins;
+    font-weight: $Bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-primary;
+    padding: 13px 38px 13px 16px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: 1px solid #F5F5F5;
+    transition: 0.2s ease;
+
+    &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-image: url("../../images/chevron-right.svg");
+        background-repeat: no-repeat;
+        margin-left: 13px;
+        transform: translateX(0px);
+    }
+
+    &:hover{
+        border: 1px solid $color-green;
+
+        &::after{
+            transition: 0.3s ease;
+            transform: translateX(6px);
+        }    
+    }
+}
+
+.menu__galary{
+    display: flex;
+}
+
+.card{
+    content: "";   
+    background-image: url("../../images/card-bg.png");
+    background-position: center;
+    background-size: cover;
+    width: 420px;
+    height: 280px;
+    padding: 48px 0 0 33px;
+    border-radius: 12px;
+
+    &:not(:last-child){
+        margin-right: 31px;
+    }
+}
+
+.card__cover{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-green;
+    margin-bottom: 10px;
+}
+
+.card__title{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: $color-primary;
+    margin-bottom: 93px;
+}
+
+.card__btn{
+    font-family: $font-poppins;
+    font-weight: $Bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-primary;
+    padding: 12px 16px 12px 12px;
+    border: 2px solid $color-green;
+    border-radius: 12px;
+    background-color: transparent;
+
+    &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-image: url("../../images/chevron-right.svg");
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        transform: translateX(0px);
+    }
+
+    &:hover::after{
+        transition: 0.3s ease;
+        transform: translateX(6px);  
+    }
+}
+
+@media  screen and(max-width: 1200px) {}
+
+@media  screen and(max-width: 992px) { 
+    .card{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu__list{
+        margin-bottom: 35px;
+    }
+    .menu__galary{
+        display: flex;
+        flex-flow:row wrap;
+    }
+}    
+@media  screen and(max-width: 576px) {
+    .menu__list{
+        margin-bottom: 35px;
+    }
+}
+
+
+
+
+
+

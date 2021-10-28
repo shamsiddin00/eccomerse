@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAA,CACF,OAAO,CAAE,MAAM,CAClB,AACD,AAAA,KAAK,AAAA,CACD,SAAS,CAAE,GAAG,CACd,KAAK,CAAE,IAAI,CACd,AAED,AAAA,YAAY,AAAA,CACR,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MAAM,CACzB",
+    "sources": [
+        "../scss/blocks/menyu.scss"
+    ],
+    "names": [],
+    "file": "menyu.min.css"
+}

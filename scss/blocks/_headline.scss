@@ -1,0 +1,125 @@
+.headline{
+    padding: 64px 0;
+}
+
+.line{
+    max-width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.line__title{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+    margin-right: auto;
+    transition: 0.4s ease;
+
+    &:hover{
+        color: $color-green;
+    }
+}
+
+.line__link{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    
+    
+    &::after{
+        content: "";
+        width: 7px;
+        height: 10px;
+        display: inline-block;
+        background-image: url("../../images/chevron-right.svg");
+        margin-left: 6px;
+        transform: translateX(0);
+        transition: 0.4s ease;
+    }
+
+    &:hover::after{
+        transform: translateX(6px);
+    }
+}
+
+
+
+.headline__card{
+    max-width: 269px;height: 326px;
+    padding:16px;
+    border-radius: 12px;
+    border: 2px solid $color-grey;transform: scale(1);
+    transition: 0.2s ease;
+
+
+    &:hover{
+        transform: scale(1.02);
+        box-shadow: 1px 1px 5px gray;
+    }
+}
+
+.headline__photo{
+    width:237px;
+    height: 180px;
+    border-radius: 12px;
+    background-color: $color-grey;
+    margin-bottom: 16px;
+}
+
+.headline__title{
+    font-family: $font-poppins;
+    font-weight: $Medium;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-primary;
+    margin-bottom: 4px;
+}
+
+.headline__subtitle{
+    font-family: $font-open;
+    font-weight: $Normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-primary;
+    margin-bottom: 16px;
+}
+
+.headline__cover{
+    width: 237px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline__pain{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+}
+
+.headline__btn-link{
+    padding: 6px 12px;
+    background-color: $color-green;
+    border-radius: 12px;
+    border: 2px solid #46760A;
+    font-family:$font-poppins;
+    font-weight: $Bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff;
+    transition: 0.3s ease;
+
+    &:hover{
+        color:$color-green;
+        background-color: $color-grey;
+    }
+}

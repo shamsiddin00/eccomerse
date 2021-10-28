@@ -1,0 +1,157 @@
+.gallary{
+    padding: 64px 0;
+}
+
+.gallary__card{
+    width: 269px;
+    height: 326px;
+    transform: scale(1);
+    transition: 0.2s ease;
+
+    &:hover{
+        transform: scale(1.02);
+        box-shadow: 1px 1px 5px gray;
+    }
+}
+
+.gallary__discr{
+    max-width: 269px;
+    padding-top: 27px;
+}
+
+
+.gallary__subject{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+    margin-bottom: 16px;
+}
+
+.gallary__list{
+    margin-bottom: 48px;
+}
+
+.gallary__item{
+    margin-bottom: 12px;
+}
+
+.gallary__link{
+    font-family: $font-open;
+    font-weight: $Normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-green;
+    text-decoration:underline;
+    transition: 0.4s ease;
+
+    &:hover{
+        color: $color-green-light;
+    }
+}
+
+.gallary__btn{
+    font-family: $font-poppins;
+    font-weight: $Bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-primary;
+    padding: 13px 38px 13px 16px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    border: 1px solid #F5F5F5;
+    transition: 0.2s ease;
+
+    &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-image: url("../../images/chevron-right.svg");
+        background-repeat: no-repeat;
+        margin-left: 13px;
+        transform: translateX(0px);
+    }
+
+    &:hover{
+        border: 1px solid $color-green;
+
+        &::after{
+            transition: 0.3s ease;
+            transform: translateX(6px);
+        }    
+    }
+}
+
+.gallary___subsection{
+    max-width: 1260px;
+    margin-bottom: 64px;
+}
+
+.gallary__card{
+    max-width: 269px;
+    padding:16px;
+    border-radius: 12px;
+    border: 2px solid $color-grey;
+}
+
+.gallary__photo{
+    width:237px;
+    height: 180px;
+    border-radius: 12px;
+    background-color: $color-grey;
+    margin-bottom: 16px;
+}
+
+.gallary__title{
+    font-family: $font-poppins;
+    font-weight: $Medium;
+    font-size: 15px;
+    line-height: 22px;
+    color: $color-primary;
+    margin-bottom: 4px;
+}
+
+.gallary__subtitle{
+    font-family: $font-open;
+    font-weight: $Normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-primary;
+    margin-bottom: 16px;
+}
+
+.gallary__cover{
+    width: 237px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallary__pain{
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-primary;
+}
+
+.gallary__btn-link{
+    padding: 6px 12px;
+    background-color: $color-green;
+    border-radius: 12px;
+    border: 2px solid #46760A;
+    font-family:$font-poppins;
+    font-weight: $Bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff;
+    transition: 0.3s ease;
+
+    &:hover{
+        color:$color-green;
+        background-color: $color-grey;
+    }
+}
+
+
